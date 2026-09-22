@@ -19,14 +19,14 @@ Install **all** of them together so relative links under `pet-shared/` resolve.
 
 ## Quick install (recommended)
 
-After this repo is on GitHub (replace `YOUR_USER`):
+After this repo is on GitHub (replace `fabriciomaruta`):
 
 ```bash
 # Interactive — pick agents + skills
-npx skills add YOUR_USER/fabricio-skills
+npx skills add fabriciomaruta/fabricio-skills
 
 # Non-interactive: all PET skills, global, common agents
-npx skills add YOUR_USER/fabricio-skills \
+npx skills add fabriciomaruta/fabricio-skills \
   --skill '*' \
   -g \
   -a cursor -a github-copilot -a opencode -a claude-code -a codex \
@@ -43,7 +43,7 @@ npx skills add ~/dev/fabricio-skills --skill '*' -g -y
 List what the CLI discovers:
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --list
+npx skills add fabriciomaruta/fabricio-skills --list
 # or
 npx skills add ~/dev/fabricio-skills -l
 ```
@@ -64,7 +64,7 @@ into their skill directories (symlink by default; use `--copy` if needed).
 ### Cursor
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -a cursor -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -a cursor -y
 ```
 
 Then invoke in chat, e.g. `/pet-loop`, or ask the agent to use `pet-planner`.
@@ -73,13 +73,13 @@ Project-scoped (committed with the app):
 
 ```bash
 cd your-app
-npx skills add YOUR_USER/fabricio-skills --skill '*' -a cursor -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -a cursor -y
 ```
 
 ### GitHub Copilot
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -a github-copilot -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -a github-copilot -y
 ```
 
 In Copilot CLI you can manage skills with `/skills`. Project skills may also live
@@ -89,20 +89,20 @@ you target `github-copilot`.
 ### OpenCode
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -a opencode -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -a opencode -y
 ```
 
 ### Claude Code / Codex
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -a claude-code -y
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -a codex -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -a claude-code -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -a codex -y
 ```
 
 ### All detected agents at once
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' --all -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' --all -y
 ```
 
 ## Manual install (no CLI)
@@ -162,14 +162,14 @@ gh repo create fabricio-skills --public --source=. --remote=origin --push
 # Or manually:
 # 1. Create an empty repo on GitHub named fabricio-skills
 # 2. Then:
-git remote add origin git@github.com:YOUR_USER/fabricio-skills.git
+git remote add origin git@github.com:fabriciomaruta/fabricio-skills.git
 git push -u origin main
 ```
 
 After push, anyone can install with:
 
 ```bash
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -y
 ```
 
 ## Updates
@@ -177,7 +177,7 @@ npx skills add YOUR_USER/fabricio-skills --skill '*' -g -y
 ```bash
 npx skills update
 # or re-add from the remote
-npx skills add YOUR_USER/fabricio-skills --skill '*' -g -y
+npx skills add fabriciomaruta/fabricio-skills --skill '*' -g -y
 ```
 
 ## License
